@@ -3,6 +3,37 @@ body{
     color:  white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+#setup{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+#setup button{
+    width: 150px;
+    
+}
+#left-arrow{
+    cursor: pointer;
+    font-size: 50px;
+    margin-left: 60px;
+}
+#right-arrow{
+   cursor: pointer;
+    font-size: 50px;
+    float: right;
+    margin-right: 60px;
+}
+#arrow{
+    display: flex;
+    justify-content: space-between;
+}
+#setup h1{
+color: black;
+}
 #Quiz-wrapper{
     background-color: black;
     width: 450px;
@@ -81,7 +112,7 @@ button{
 
 .animationvalue{
 animation: ani;
-animation-duration: 2s;
+animation-duration: 1s;
 animation-iteration-count: infinite;
 color: red;
 }
@@ -93,4 +124,78 @@ color: red;
    100%{
  opacity: 1;
    }
+}
+
+@media screen and (min-width:380px) {
+    #Quiz-wrapper{
+       
+        width: 320px;
+    }
+    #setup{
+        width: 300px;
+      
+    }
+
+    h6{
+        font-size: 15px;
+    }
+    #setup h1{
+      font-size: 15px;
+        }
+}
+
+
+@media screen and (min-width:600px) {
+    #Quiz-wrapper{
+       
+        width: 500px;
+    }
+
+    
+    h6{
+        font-size: 15px;
+    }
+    #setup{
+        width: 500px;
+        
+    }
+    #setup h1{
+      font-size: 20px;
+        }
+}
+
+@media screen and (min-width:768px) {
+    #Quiz-wrapper{
+       
+        width: 600px;
+    }
+
+    h6{
+        font-size: 15px;
+    }
+    #setup{
+        width: 600px;
+       
+    }
+    #setup h1{
+      font-size: 20px;
+        }
+}
+
+@media screen and (min-width:992px) {
+    #Quiz-wrapper{
+       
+        width: 700px;
+    }
+
+    h6{
+        font-size: 15px;
+    }
+    #setup{
+        width: 600px;
+       
+    }
+    #setup h1{
+      font-size: 20px;
+        }
 }
