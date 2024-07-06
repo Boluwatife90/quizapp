@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="./quiz.css">
 </head>
 <body>
-    <div id="Quiz-wrapper">
+    <div id="setup" class="show" >
+        <h1 > Did you wish to start this text if yes click the button </h1>
+        <button id="setup_btn">Start text now</button>
+    </div>
+    <div id="Quiz-wrapper" class="hide" >
         <h1>Quiz App</h1>
         <p  id="timecounter">Time : 00 00</p>
         <div id="question-answer-wrapper"  >
@@ -18,6 +22,7 @@
                 <Button id="btn">Submit </Button>
      <h1 id="score"> Score : <span id="scoreNum">0</span></h1>
             </div>
+            
         </div>
        
 <div id="display-result" class="hide"  >
@@ -25,7 +30,7 @@
         <button id="Retry-btn"> Retry</button>
         <button id="wrong-ans"> Wrong Answer</button>
 
-    </div>.
+    </div>
 
     
     <div  id="wrong-answer-div" class="hide">
