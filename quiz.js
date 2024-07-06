@@ -86,8 +86,21 @@ let question_an = document.getElementById('question-ans')
 let user_wrong_answer = document.getElementById('user-wrong-answer')
 let Right_ans = document.getElementById('Right-ans')
 let timecounter = document.getElementById('timecounter')
+let setup = document.getElementById('setup')
+let setup_btn = document.getElementById('setup_btn')
+let quiz_wrapper = document.getElementById('Quiz-wrapper')
+let left_arrow = document.getElementById('left-arrow')
+let right_arrow = document.getElementById('right-arrow')
+
+
+
 
 let timer ;
+setup_btn.addEventListener('click',function(){
+  timesetter()
+  setup.className= 'hide'
+  quiz_wrapper.className = 'show'
+})
 function timesetter(){
 
   let startingtime = 3;
@@ -115,11 +128,11 @@ function timesetter(){
   
  }
 
- timesetter()
+ 
  
 
 let getquestion=()=>{
-  
+  console.log(currentquestion)
     let option = ans[currentquestion].options
     question.innerHTML = ans[currentquestion].question
     let optionElement = document.createElement('div')
@@ -141,7 +154,6 @@ let getquestion=()=>{
 }
 result.innerHTML = ''
 result.appendChild(optionElement)
-number_of_question.innerText = `You have answer ${currentquestion + 1} Of ${ans.length}`
 
 }
 
@@ -156,6 +168,8 @@ btn.addEventListener('click',function(){
  if(selectedoption){
     if(answer ===ans[currentquestion].answer){
         displayscore()
+        
+
      }
      else{
       incorrectAnswers.push({
