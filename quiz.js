@@ -66,10 +66,10 @@ const ans  = [
         },
       ];
 
-let question =  document.getElementById('question')
-let result = document.getElementById('result')
-let btn = document.getElementById('btn')
-let ScoreNum= document.getElementById('scoreNum')
+let question =  document.getElementById('question');
+let result = document.getElementById('result');
+let btn = document.getElementById('btn');
+let ScoreNum= document.getElementById('scoreNum');
 var incorrectAnswers = []
 let currentquestion = 0
 let score = 0
